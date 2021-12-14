@@ -12,9 +12,3 @@ main {
 header {
   background-color: rgb(184, 40, 30);
 }
-
-.noWrap {
-  /* font-size: 2em;
-  font-weight: bold; */
-  white-space: pre-wrap;
-}
