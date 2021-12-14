@@ -2009,4 +2009,9 @@ function advent1() {
   console.log('The number of increases are', + increase)
 }
 
+function advent2() {
+  console.log('this is for advent2')
+}
+
 advent1()
+advent2()
