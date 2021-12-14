@@ -1,4 +1,4 @@
-function advent1 {
+function advent1() {
   let input = [173,
     175,
     171,
@@ -2002,8 +2002,11 @@ function advent1 {
   ]
   let increase = 0
   for (let i = 1; i < input.length; i++) {
-    if ()
+    if (input[i] > input[i - 1]) {
+      increase++
+    }
   }
+  console.log('The number of increases are', + increase)
 }
 
-console.log('The Length of the array is,' + input.length)
+advent1()
