@@ -3049,6 +3049,10 @@ function day2DiveP2() {
   // console.log('number of aim units = ' + aim)
 }
 
+let inputDay3 = [
+
+]
+
 function day3Binary() {
 
 }
