@@ -3032,4 +3032,15 @@ function day2Dive() {
   // console.log('number of depth units = ' + depth)
 }
 
-day2Dive()
+function day2DiveP2() {
+  let horizontal = 0
+  let depth = 0
+  let aim = 0
+  for (let i = 0; i < inputDay2.length; i++) {
+    inputDay2[i].startsWith("for") ? horizontal += parseInt(inputDay2[i][inputDay2[i].length - 1]) depth += aim * parseInt(inputDay2[i][inputDay2[i].length - 1]) : inputDay2[i].startsWith("up") ? depth -= parseInt(inputDay2[i][inputDay2[i].length - 1]) : depth += parseInt(inputDay2[i][inputDay2[i].length - 1])
+  }
+  // console.log('number of horizontals = ' + horizontal)
+  // console.log('number of depth units = ' + depth)
+}
+
+day2DiveP2()
