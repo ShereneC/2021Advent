@@ -3044,9 +3044,13 @@ function day2DiveP2() {
       inputDay2[i].startsWith("up") ? aim -= parseInt(inputDay2[i][inputDay2[i].length - 1]) : aim += parseInt(inputDay2[i][inputDay2[i].length - 1])
     }
   }
-  console.log('number of horizontals = ' + horizontal)
-  console.log('number of depth units = ' + depth)
-  console.log('number of aim units = ' + aim)
+  // console.log('number of horizontals = ' + horizontal)
+  // console.log('number of depth units = ' + depth)
+  // console.log('number of aim units = ' + aim)
 }
 
-day2DiveP2()
+function day3Binary() {
+
+}
+
+day3Binary()
