@@ -3037,10 +3037,16 @@ function day2DiveP2() {
   let depth = 0
   let aim = 0
   for (let i = 0; i < inputDay2.length; i++) {
-    inputDay2[i].startsWith("for") ? horizontal += parseInt(inputDay2[i][inputDay2[i].length - 1]) depth += aim * parseInt(inputDay2[i][inputDay2[i].length - 1]) : inputDay2[i].startsWith("up") ? depth -= parseInt(inputDay2[i][inputDay2[i].length - 1]) : depth += parseInt(inputDay2[i][inputDay2[i].length - 1])
+    if (inputDay2[i].startsWith("for")) {
+      horizontal += parseInt(inputDay2[i][inputDay2[i].length - 1])
+      depth += (aim * parseInt(inputDay2[i][inputDay2[i].length - 1]))
+    } else {
+      inputDay2[i].startsWith("up") ? aim -= parseInt(inputDay2[i][inputDay2[i].length - 1]) : aim += parseInt(inputDay2[i][inputDay2[i].length - 1])
+    }
   }
-  // console.log('number of horizontals = ' + horizontal)
-  // console.log('number of depth units = ' + depth)
+  console.log('number of horizontals = ' + horizontal)
+  console.log('number of depth units = ' + depth)
+  console.log('number of aim units = ' + aim)
 }
 
 day2DiveP2()
