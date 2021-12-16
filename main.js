@@ -2000,6 +2000,26 @@ let input = [173,
   7121,
 ]
 
+function advent1() {
+  let increase = 0
+  for (let i = 1; i < input.length; i++) {
+    if (input[i] > input[i - 1]) {
+      increase++
+    }
+  }
+  // console.log('The number of increases are', + increase)
+}
+
+function advent2() {
+  let increase = 0
+  for (let i = 1; i < input.length - 2; i++) {
+    if ((input[i - 1] + input[i] + input[i + 1]) < (input[i] + input[i + 1] + input[i + 2])) {
+      increase++
+    }
+  }
+  // console.log('this is for advent2 increases ' + increase)
+}
+
 let inputDay2 = ['forward 5',
   'down 7',
   'forward 8',
@@ -3002,34 +3022,14 @@ let inputDay2 = ['forward 5',
   'forward 7',
 ]
 
-function advent1() {
-  let increase = 0
-  for (let i = 1; i < input.length; i++) {
-    if (input[i] > input[i - 1]) {
-      increase++
-    }
-  }
-  // console.log('The number of increases are', + increase)
-}
-
-function advent2() {
-  let increase = 0
-  for (let i = 1; i < input.length - 2; i++) {
-    if ((input[i - 1] + input[i] + input[i + 1]) < (input[i] + input[i + 1] + input[i + 2])) {
-      increase++
-    }
-  }
-  // console.log('this is for advent2 increases ' + increase)
-}
-
 function day2Dive() {
   let horizontal = 0
   let depth = 0
   for (let i = 0; i < inputDay2.length; i++) {
-    inputDay2[i].startsWith("for") ? horizontal++ : false
+    inputDay2[i].startsWith("for") ? horizontal += parseInt(inputDay2[i][inputDay2[i].length - 1]) : inputDay2[i].startsWith("up") ? depth -= parseInt(inputDay2[i][inputDay2[i].length - 1]) : depth += parseInt(inputDay2[i][inputDay2[i].length - 1])
   }
-  console.log('number of horizontals = ' + horizontal)
-
+  // console.log('number of horizontals = ' + horizontal)
+  // console.log('number of depth units = ' + depth)
 }
 
 day2Dive()
