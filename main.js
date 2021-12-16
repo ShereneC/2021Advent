@@ -3019,12 +3019,16 @@ function advent2() {
       increase++
     }
   }
-  console.log('this is for advent2 increases ' + increase)
+  // console.log('this is for advent2 increases ' + increase)
 }
 
 function day2Dive() {
   let horizontal = 0
   let depth = 0
+  for (let i = 0; i < inputDay2.length; i++) {
+    inputDay2[i].contains("forward") ? horizontal++ : false
+  }
+  console.log('number of horizontals = ' + horizontal)
 
 }
 
