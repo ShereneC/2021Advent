@@ -3026,7 +3026,7 @@ function day2Dive() {
   let horizontal = 0
   let depth = 0
   for (let i = 0; i < inputDay2.length; i++) {
-    inputDay2[i].contains("forward") ? horizontal++ : false
+    inputDay2[i].startsWith("for") ? horizontal++ : false
   }
   console.log('number of horizontals = ' + horizontal)
 
