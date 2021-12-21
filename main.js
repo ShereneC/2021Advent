@@ -3094,4 +3094,8 @@ function day3Binary() {
   console.log(epsilonDecimal * gammaDecimal)
 }
 
-day3Binary()
+function day3Binary2() {
+  console.log("more fun with binary, aaaah!")
+}
+
+day3Binary2()
