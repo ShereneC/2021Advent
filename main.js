@@ -3068,10 +3068,11 @@ function day3Binary() {
     let zeros = 0
     let ones = 0
     for (let j = 0; j < lines.length; j++) {
-      lines[i][j] == '0' ? zeros++ : ones++
+      lines[i][j] == 0 ? zeros++ : ones++
+      console.log(lines[i][j])
     }
-    console.log('zeros in line' + i + '=' + zeros)
-    console.log('ones in line' + i + '=' + ones)
+    // console.log('zeros in line' + i + '=' + zeros)
+    // console.log('ones in line' + i + '=' + ones)
   }
 
 }
