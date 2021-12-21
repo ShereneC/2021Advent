@@ -3072,15 +3072,19 @@ function day3Binary() {
   // console.log(lines[3][0])
   // console.log(lines[4][0])
   // console.log(lines[5][0])
+  let gamma = ''
+  let epsilon = ''
   for (let j = 0; j < lines[j].length - 1; j++) {
     let zeros = 0
     let ones = 0
     for (let i = 0; i < lines.length; i++) {
       lines[i][j] == 0 ? zeros++ : ones++
     }
-    console.log('zeros in line' + j + '=' + zeros)
-    console.log('ones in line' + j + '=' + ones)
+    zeros > ones ? gamma += '0' : gamma += '1'
+    zeros > ones ? epsilon += '1' : epsilon += '0'
   }
+  console.log(gamma)
+  console.log(epsilon)
 
 }
 
