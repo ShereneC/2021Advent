@@ -3085,7 +3085,10 @@ function day3Binary() {
   }
   console.log(gamma)
   console.log(epsilon)
+  let decimal = 0
+  for (let i = gamma.length - 1; i >= 0; i--) {
 
+  }
 }
 
 day3Binary()
