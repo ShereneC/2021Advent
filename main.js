@@ -3064,14 +3064,6 @@ const lines = fs
 // console.log(lines[1].length)
 
 function day3Binary() {
-  // console.log(lines.length)
-  // console.log(lines[0].length - 1)
-  // console.log(lines[0][0])
-  // console.log(lines[1][0])
-  // console.log(lines[2][0])
-  // console.log(lines[3][0])
-  // console.log(lines[4][0])
-  // console.log(lines[5][0])
   let gamma = ''
   let epsilon = ''
   for (let j = 0; j < lines[j].length - 1; j++) {
@@ -3091,15 +3083,15 @@ function day3Binary() {
       gammaDecimal += multiple
     }
     multiple *= 2
-    console.log(gammaDecimal)
   }
+  multiple = 1
   for (let i = epsilon.length - 1; i >= 0; i--) {
     if (epsilon[i] == '1') {
       epsilonDecimal += multiple
     }
     multiple *= 2
-    console.log(epsilonDecimal)
   }
+  console.log(epsilonDecimal * gammaDecimal)
 }
 
 day3Binary()
