@@ -3072,17 +3072,16 @@ function day3Binary() {
   // console.log(lines[3][0])
   // console.log(lines[4][0])
   // console.log(lines[5][0])
-  for (let j = 0; j < lines[i].length - 1; j++) {
+  for (let j = 0; j < lines[j].length - 1; j++) {
     let zeros = 0
     let ones = 0
     for (let i = 0; i < lines.length; i++) {
-      lines[i][j] == 0 ? zeros++ : ones++
-      console.log(lines[i][j])
+      lines[j][i] == 0 ? zeros++ : ones++
     }
-    // console.log('zeros in line' + i + '=' + zeros)
-    // console.log('ones in line' + i + '=' + ones)
-    // }
-
+    console.log('zeros in line' + j + '=' + zeros)
+    console.log('ones in line' + j + '=' + ones)
   }
 
-  day3Binary()
+}
+
+day3Binary()
