@@ -3064,17 +3064,25 @@ const lines = fs
 // console.log(lines[1].length)
 
 function day3Binary() {
-  for (let i = 0; i < lines[i].length; i++) {
+  // console.log(lines.length)
+  // console.log(lines[0].length - 1)
+  // console.log(lines[0][0])
+  // console.log(lines[1][0])
+  // console.log(lines[2][0])
+  // console.log(lines[3][0])
+  // console.log(lines[4][0])
+  // console.log(lines[5][0])
+  for (let j = 0; j < lines[i].length - 1; j++) {
     let zeros = 0
     let ones = 0
-    for (let j = 0; j < lines.length; j++) {
+    for (let i = 0; i < lines.length; i++) {
       lines[i][j] == 0 ? zeros++ : ones++
       console.log(lines[i][j])
     }
     // console.log('zeros in line' + i + '=' + zeros)
     // console.log('ones in line' + i + '=' + ones)
+    // }
+
   }
 
-}
-
-day3Binary()
+  day3Binary()
