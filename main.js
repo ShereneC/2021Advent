@@ -3083,11 +3083,22 @@ function day3Binary() {
     zeros > ones ? gamma += '0' : gamma += '1'
     zeros > ones ? epsilon += '1' : epsilon += '0'
   }
-  console.log(gamma)
-  console.log(epsilon)
-  let decimal = 0
+  let gammaDecimal = 0
+  let epsilonDecimal = 0
+  let multiple = 1
   for (let i = gamma.length - 1; i >= 0; i--) {
-
+    if (gamma[i] == '1') {
+      gammaDecimal += multiple
+    }
+    multiple *= 2
+    console.log(gammaDecimal)
+  }
+  for (let i = epsilon.length - 1; i >= 0; i--) {
+    if (epsilon[i] == '1') {
+      epsilonDecimal += multiple
+    }
+    multiple *= 2
+    console.log(epsilonDecimal)
   }
 }
 
