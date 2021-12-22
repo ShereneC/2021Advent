@@ -3097,7 +3097,15 @@ function day3Binary() {
 function day3Binary2() {
   let oxygenGeneratorRating = 0
   let co2ScrubberRating = 0
+  let mostFrequent = null
+  for (let i = 0; i < lines[i].length - 1; i++) {
+    let zeros = 0
+    let ones = 0
+    for (let j = 0; j < lines.length; j++) {
+      lines[j][i] == 0 ? zeros++ : ones++
+    }
 
+  }
 }
 
 day3Binary2()
