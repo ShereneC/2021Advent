@@ -3095,7 +3095,9 @@ function day3Binary() {
 }
 
 function day3Binary2() {
-  console.log("more fun with binary, aaaah!")
+  let oxygenGeneratorRating = 0
+  let co2ScrubberRating = 0
+
 }
 
 day3Binary2()
