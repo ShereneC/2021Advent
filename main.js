@@ -3105,7 +3105,7 @@ function day3Binary2() {
       lines[j][i] == 0 ? zeros++ : ones++
     }
     zeros > ones ? mostFrequent = 0 : mostFrequent = 1
-    for (let k = 0; k < lines[k].length; k++) {
+    for (let k = 0; k < lines[k].length - 1; k++) {
       if (!lines[k] == mostFrequent) {
         lines.splice(k, 1)
       }
