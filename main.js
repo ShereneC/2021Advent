@@ -3097,22 +3097,24 @@ function day3Binary() {
 function day3Binary2() {
   let oxygenGeneratorRating = 0
   let co2ScrubberRating = 0
-  let zeros = 0
-  let ones = 0
-  for (let i = 0; i < 1; i++) {
-    let mostFrequent = null
-    for (let j = 0; j < lines.length; j++) {
-      lines[j][i] == 0 ? zeros++ : ones++
+  for (let l = 0; l < lines.length; l++) {
+    let zeros = 0
+    let ones = 0
+    for (let i = 0; i < 1; i++) {
+      let mostFrequent = null
+      for (let j = 0; j < lines.length; j++) {
+        lines[j][i] == 0 ? zeros++ : ones++
+      }
     }
-  }
-  zeros > ones ? mostFrequent = 0 : mostFrequent = 1
-  console.log('zeros equals ' + zeros)
-  console.log('ones equals ' + ones)
-  console.log('mostFrequent is ' + mostFrequent)
-  for (let k = 0; k < lines.length; k++) {
-    if (lines[k][0] != mostFrequent) {
-      lines.splice(k, 1)
-      k--
+    zeros > ones ? mostFrequent = 0 : mostFrequent = 1
+    console.log('zeros equals ' + zeros)
+    console.log('ones equals ' + ones)
+    console.log('mostFrequent is ' + mostFrequent)
+    for (let k = 0; k < lines.length; k++) {
+      if (lines[k][0] != mostFrequent) {
+        lines.splice(k, 1)
+        k--
+      }
     }
   }
   console.log(lines)
