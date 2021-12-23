@@ -3106,6 +3106,8 @@ function day3Binary2() {
     }
   }
   zeros > ones ? mostFrequent = 0 : mostFrequent = 1
+  console.log('zeros equals' + zeros)
+  console.log('ones equals' + ones)
   for (let k = 0; k < 1; k++) {
     if (lines[k] != mostFrequent) {
       lines.splice(k, 1)
