@@ -3112,10 +3112,12 @@ function day3Binary2() {
     console.log('ones equals ' + ones)
     console.log('mostFrequent is ' + mostFrequent)
     for (let k = 0; k < lines.length; k++) {
+      let m = 0
       if (lines.length > 1) {
-        if (lines[k][0] != mostFrequent) {
+        if (lines[k][m] != mostFrequent) {
           lines.splice(k, 1)
           k--
+          m++
         }
       }
     }
