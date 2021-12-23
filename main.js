@@ -3093,7 +3093,7 @@ function day3Binary() {
   }
   console.log(epsilonDecimal * gammaDecimal)
 }
-
+// I've got it taking out the lines from the first iteration - need to work on the next iterations.
 function day3Binary2() {
   let oxygenGeneratorRating = 0
   let co2ScrubberRating = 0
