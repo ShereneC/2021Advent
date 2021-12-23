@@ -3116,8 +3116,8 @@ function day3Binary2() {
       if (lines.length > 1) {
         if (lines[k][m] != mostFrequent) {
           lines.splice(k, 1)
-          k--
           m++
+          k--
         }
       }
     }
